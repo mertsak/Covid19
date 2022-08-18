@@ -2,26 +2,41 @@
 
 Project Features
 
-✔️ State management with Redux
+✔️ State management with Redux 
+
 ✔️ Dark and light theme
+
 ✔️ English and Turkish language option
+
 ✔️ Global data results
+
 ✔️ Selected country data results
+
 ✔️ Graphic representation of the selected country
 
 
 🔥 Technologies and Libraries
 
 👉 React.js
+
 👉 Redux
+
 👉 Redux Toolkit
+
 👉 Axios
+
 👉 Moment.js
+
 👉 React-Icons
+
 👉 React-CountUp
+
 👉 react-number-format
+
 👉 React-Chartjs-2
+
 👉 Sass
+
 👉 Fontawsome Icon
 
 ![Screenshot_3](https://user-images.githubusercontent.com/63242329/185452063-c1190a8c-2df6-47b8-9e93-22c21d1008da.png)
