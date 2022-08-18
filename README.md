@@ -1,6 +1,6 @@
-🦠 Covid-19 Tracker with React
+#  🦠Covid-19 Tracker with React
 
-Project Features
+# Project Features
 
 ✔️ State management with Redux 
 
@@ -15,7 +15,7 @@ Project Features
 ✔️ Graphic representation of the selected country
 
 
-🔥 Technologies and Libraries
+# 🔥Technologies and Libraries
 
 👉 React.js
 
