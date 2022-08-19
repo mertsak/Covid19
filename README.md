@@ -2,43 +2,28 @@
 
 # Project Features
 
-✔️ State management with Redux
-
-✔️ Dark and light theme
-
-✔️ English and Turkish language option
-
-✔️ Global data results
-
-✔️ Selected country data results
-
-✔️ Graphic representation of the selected country
-
-✔️ Responsive
+✔️ State management with Redux <br />
+✔️ Dark and light theme <br />
+✔️ English and Turkish language option <br />
+✔️ Global data results <br />
+✔️ Selected country data results <br />
+✔️ Graphic representation of the selected country <br />
+✔️ Responsive <br />
 
 # 🔥 Technologies and Libraries
 
-👉 React.js
+👉 React.js <br />
+👉 Redux <br />
+👉 Redux Toolkit <br />
+👉 Axios <br />
+👉 Moment.js <br />
+👉 React-Icons <br />
+👉 React-CountUp <br />
+👉 react-number-format <br />
+👉 Sass <br />
+👉 Fontawsome Icon <br />
 
-👉 Redux
-
-👉 Redux Toolkit
-
-👉 Axios
-
-👉 Moment.js
-
-👉 React-Icons
-
-👉 React-CountUp
-
-👉 react-number-format
-
-👉 Sass
-
-👉 Fontawsome Icon
-
-# Project Photo
+## Screenshot
 
 ![Screenshot_3](https://user-images.githubusercontent.com/63242329/185452063-c1190a8c-2df6-47b8-9e93-22c21d1008da.png)
 ![Screenshot_4](https://user-images.githubusercontent.com/63242329/185452151-4f11e3a8-a135-4208-bc0f-b733806fc271.png)
