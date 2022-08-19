@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 # 🦠 Covid-19 Tracker with React
 
 # Project Features
 
 ✔️ State management with Redux
 
-=======
-#  🦠Covid-19 Tracker with React
-
-# Project Features
-
-✔️ State management with Redux 
-
->>>>>>> 439ef515e21304513a38cdcee7b1f1a48d113508
 ✔️ Dark and light theme
 
 ✔️ English and Turkish language option
@@ -25,11 +16,7 @@
 
 ✔️ Responsive
 
-<<<<<<< HEAD
 # 🔥 Technologies and Libraries
-=======
-# 🔥Technologies and Libraries
->>>>>>> 439ef515e21304513a38cdcee7b1f1a48d113508
 
 👉 React.js
 
@@ -45,12 +32,7 @@
 
 👉 React-CountUp
 
-<<<<<<< HEAD
-=======
 👉 react-number-format
-
->>>>>>> 439ef515e21304513a38cdcee7b1f1a48d113508
-👉 React-Chartjs-2
 
 👉 Sass
 
