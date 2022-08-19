@@ -23,7 +23,7 @@ html.dark select {
   border-bottom: 2px solid #fff; }
   html.dark select option {
     background-color: #334155;
-    color: fff; }
+    color: #fff; }
 
 html.dark .theme__mode,
 html.dark .language__mode {
@@ -75,8 +75,9 @@ header {
     gap: 1rem; }
     .home-container .home-content .card-2 .card {
       background-color: #bfdbfe;
-      padding: 1rem 1.5rem;
-      border-radius: 0.5rem; }
+      padding: 1rem 1.2rem;
+      border-radius: 0.5rem;
+      min-width: 135px; }
     .home-container .home-content .card-2 .card-x {
       background-color: #fef08a; }
   .home-container .home-content .card-1 {
@@ -111,10 +112,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    flex-wrap: wrap; }
     .country-data-con .card-box .card {
-      padding: 2rem;
-      border-radius: 0.5rem; }
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      min-width: 130px; }
       .country-data-con .card-box .card.y {
         background-color: #fef08a; }
       .country-data-con .card-box .card.r {
@@ -137,3 +140,20 @@ header {
 
 canvas {
   padding: 2rem; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70%; }
+  .chart-container {
+    width: 90%; }
+  canvas {
+    max-height: 300px !important;
+    min-height: 200px !important; }
+  select {
+    width: 70% !important; }
+  .home-img-con {
+    gap: inherit !important;
+    width: 350px;
+    height: 350px; }
+  .card {
+    min-width: 100px !important; } }

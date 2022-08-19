@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import moment from "moment";
-import NumberFormat from "react-number-format";
+import CountUp from "react-countup";
 import "moment/locale/en-nz";
 import "moment/locale/tr";
 
@@ -23,7 +23,6 @@ const Card = () => {
   }
 
   useEffect(() => {
-    // dispatch(fetchCountries());
     dispatch(fetchData());
   }, [dispatch]);
 
@@ -75,12 +74,11 @@ const Card = () => {
               )}
 
               <p>
-                <NumberFormat
-                  value={data && data.confirmed.value}
-                  className="foo"
-                  displayType={"text"}
-                  thousandSeparator={true}
-                />
+                <CountUp
+                  start={0}
+                  end={data && data.confirmed.value}
+                  separator=","
+                ></CountUp>
               </p>
             </div>
             <div className="card card-x">
@@ -91,12 +89,11 @@ const Card = () => {
               )}
 
               <p>
-                <NumberFormat
-                  value={data && data.confirmed.value - data.deaths.value}
-                  className="foo"
-                  displayType={"text"}
-                  thousandSeparator={true}
-                />
+                <CountUp
+                  start={0}
+                  end={data && data.confirmed.value - data.deaths.value}
+                  separator=","
+                ></CountUp>
               </p>
             </div>
           </div>
@@ -109,12 +106,11 @@ const Card = () => {
             )}
 
             <p>
-              <NumberFormat
-                value={data && data.deaths.value}
-                className="foo"
-                displayType={"text"}
-                thousandSeparator={true}
-              />
+              <CountUp
+                start={0}
+                end={data && data.deaths.value}
+                separator=","
+              ></CountUp>
             </p>
           </div>
         </div>

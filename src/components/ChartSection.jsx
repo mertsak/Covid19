@@ -6,10 +6,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 
 const ChartSection = () => {
-  // const country = useSelector((state) => state.covid.country);
   const country = useSelector((state) => state.covid.country);
-
-  console.log(country);
 
   return (
     <div className="chart-container">

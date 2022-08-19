@@ -1,16 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import NumberFormat from "react-number-format";
 import moment from "moment";
+import CountUp from "react-countup";
 
 import "moment/locale/en-nz";
 import "moment/locale/tr";
 
-
 import { fetchCountries, fetchOneData } from "../redux/covidSlice/services";
-
-// import { getCountry } from "../redux/covidSlice/covidSlice";
 
 const DrowDown = () => {
   const [country, setCountry] = useState("Turkey");
@@ -28,7 +25,6 @@ const DrowDown = () => {
   useEffect(() => {
     dispatch(fetchOneData(country));
     dispatch(fetchCountries());
-    // dispatch(getCountry(country));
   }, [dispatch, country]);
 
   return (
@@ -71,12 +67,11 @@ const DrowDown = () => {
               <p className="title">Enfekte</p>
             )}
             <p>
-              <NumberFormat
-                value={countryx && countryx.confirmed.value}
-                className="foo"
-                displayType={"text"}
-                thousandSeparator={true}
-              />
+              <CountUp
+                start={0}
+                end={countryx && countryx.confirmed.value}
+                separator=","
+              ></CountUp>
             </p>
           </div>
 
@@ -87,14 +82,13 @@ const DrowDown = () => {
               <p className="title">Aktif</p>
             )}
             <p>
-              <NumberFormat
-                value={
+              <CountUp
+                start={0}
+                end={
                   countryx && countryx.confirmed.value - countryx.deaths.value
                 }
-                className="foo"
-                displayType={"text"}
-                thousandSeparator={true}
-              />
+                separator=","
+              ></CountUp>
             </p>
           </div>
 
@@ -105,12 +99,11 @@ const DrowDown = () => {
               <p className="title">Ölüm</p>
             )}
             <p>
-              <NumberFormat
-                value={countryx && countryx.deaths.value}
-                className="foo"
-                displayType={"text"}
-                thousandSeparator={true}
-              />
+              <CountUp
+                start={0}
+                end={countryx && countryx.deaths.value}
+                separator=","
+              ></CountUp>
             </p>
           </div>
         </div>

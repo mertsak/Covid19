@@ -35,7 +35,7 @@ html {
 
       option {
         background-color: #334155;
-        color: fff;
+        color: #fff;
       }
     }
 
@@ -55,8 +55,6 @@ html {
     }
   }
 }
-
-//
 
 header {
   background-color: #eee;
@@ -114,8 +112,9 @@ header {
 
       .card {
         background-color: #bfdbfe;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.2rem;
         border-radius: 0.5rem;
+        min-width: 135px;
       }
 
       .card-x {
@@ -169,10 +168,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 
     .card {
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 0.5rem;
+      min-width: 130px;
 
       &.y {
         background-color: #fef08a;
@@ -206,4 +207,35 @@ header {
 
 canvas {
   padding: 2rem;
+}
+
+// resposive
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+
+  canvas {
+    max-height: 300px !important;
+    min-height: 200px !important;
+  }
+
+  select {
+    width: 70% !important;
+  }
+
+  .home-img-con {
+    gap: inherit !important;
+    width: 350px;
+    height: 350px;
+  }
+
+  .card {
+    min-width: 100px !important;
+  }
 }
